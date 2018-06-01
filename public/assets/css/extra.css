@@ -1,0 +1,37 @@
+.button1 {
+  background-color: #e7e7e7;
+  font-size: 12px;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-family: "Lucida Console", Monaco, monospace;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  border: 1px solid white;
+}
+
+.button1:hover {
+  background-color: black;
+  color: white;
+  }
+
+td {
+  vertical-align: bottom;
+}
+
+.tingle-demo {
+  display: none;
+}
+
+.markdown-body {
+  box-sizing: border-box;
+  min-width: 200px;
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 45px;
+}
+
+@media (max-width: 767px) {
+  .markdown-body {
+    padding: 15px;
+  }
+}
