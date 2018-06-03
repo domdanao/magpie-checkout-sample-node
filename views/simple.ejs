@@ -51,11 +51,10 @@
                     </button>
 
                 <ul class="nav-dropdown collapse pull-xs-right nav navbar-nav navbar-toggleable-xl" id="exCollapsingNavbar">
-                    <li class="nav-item"><a class="nav-link link" href="index.html">OVERVIEW</a></li>
+                    <li class="nav-item"><a class="nav-link link" href="/">OVERVIEW</a></li>
                     <li class="nav-item"><a class="nav-link link getting-started markdown_modal" href="#">GETTING STARTED</a></li>
-                    <li class="nav-item"><a class="nav-link link" href="simple-edited.html">SIMPLE INTEGRATION</a></li>
-                    <li class="nav-item"><a class="nav-link link" href="custom-edited.html">CUSTOM INTEGRATION</a></li>
-                    <li class="nav-item"><a class="nav-link link" href="backend.html">PHP BACKEND</a></li>
+                    <li class="nav-item"><a class="nav-link link" href="/simple">SIMPLE INTEGRATION</a></li>
+                    <li class="nav-item"><a class="nav-link link" href="/custom">CUSTOM INTEGRATION</a></li>
                 </ul>
 
                     <button hidden="" class="navbar-toggler navbar-close" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar">
@@ -87,7 +86,7 @@
                           <tr>
                             <td>
                               <!--Simple form to create PayButton-->
-                              <form method="POST" action="/simple_process.html">
+                              <form method="POST" action="/simple_process.php">
                                 <script src="https://checkout.magpie.im/v2/checkout.js"
                                   class="magpie-button"
                                   data-name="Rock & Roll Concert"
@@ -102,8 +101,8 @@
                                 <!-- These are optional, but recommended. -->
                                 <input type="hidden" name="currency" value="PHP">
                                 <input type="hidden" name="description" value="1 Box ticket">
-                                <input type="hidden" name="name" value="Rock & Roll Concert">
-                                <input type="hidden" name="csrf" value="<?php echo $csrf; ?>">
+                                <input type="hidden" name="name" value="Rock &amp; Roll Concert">
+                                
                             </form>
                             </td>
                             <td style="padding:2px;"></td>
@@ -166,7 +165,7 @@
                     <table>
                       <tr>
                         <td>
-                          <form method="POST" action="/simple_process.html">
+                          <form method="POST" action="/simple_process.php">
                             <script src="https://checkout.magpie.im/v2/checkout.js"
                               class="magpie-button"
                               data-name="My Online Store"
@@ -228,7 +227,7 @@
           <div class="plan-btn text-xs-center">
 
             <!-- PayButton for Start Package -->
-            <form method="POST" action="/simple_process.html">
+            <form method="POST" action="/simple_process.php">
               <script src="https://checkout.magpie.im/v2/checkout.js"
                   class="magpie-button"
                   data-name="My Cloud Service"
@@ -250,7 +249,7 @@
             <pre>
               <code class="html">
 &lt;!-- PayButton for Start Package --&gt;
-&lt;form method="POST" action="/process.html"&gt;
+&lt;form method="POST" action="/process.php"&gt;
 &lt;script src="https://checkout.magpie.im/v2/checkout.js"
   class="magpie-button"
   data-name="My Cloud Service"
@@ -285,7 +284,7 @@
           <div class="plan-btn text-xs-center">
 
             <!--Buy button 2-->
-            <form method="POST" action="/simple_process.html">
+            <form method="POST" action="/simple_process.php">
               <script src="https://checkout.magpie.im/v2/checkout.js"
                   class="magpie-button"
                   data-name="My Cloud Service"
@@ -307,7 +306,7 @@
               <pre>
                 <code class="html">
 &lt;!-- PayButton for Business Package --&gt;
-&lt;form method="POST" action="/process.html"&gt;
+&lt;form method="POST" action="/process.php"&gt;
 &lt;script src="https://checkout.magpie.im/v2/checkout.js"
   class="magpie-button"
   data-name="My Cloud Service"
@@ -341,7 +340,7 @@
           
           <div class="plan-btn text-xs-center">
             <!--Buy button 3-->
-            <form method="POST" action="/simple_process.html">
+            <form method="POST" action="/simple_process.php">
               <script src="https://checkout.magpie.im/v2/checkout.js"
                   class="magpie-button"
                   data-name="My Cloud Service"
@@ -363,7 +362,7 @@
               <pre>
                 <code class="html">
 &lt;!-- PayButton for Premium Package --&gt;
-&lt;form method="POST" action="/process.html"&gt;
+&lt;form method="POST" action="/process.php"&gt;
 &lt;script src="https://checkout.magpie.im/v2/checkout.js"
   class="magpie-button"
   data-name="My Cloud Service"
@@ -397,7 +396,7 @@
           
           <div class="plan-btn text-xs-center">
             <!--Buy button 4-->
-            <form method="POST" action="/simple_process.html">
+            <form method="POST" action="/simple_process.php">
               <script src="https://checkout.magpie.im/v2/checkout.js"
                   class="magpie-button"
                   data-name="My Cloud Service"
@@ -419,7 +418,7 @@
               <pre>
                 <code class="html">
 &lt;!-- PayButton for Ultimate Package --&gt;
-&lt;form method="POST" action="/process.html"&gt;
+&lt;form method="POST" action="/process.php"&gt;
 &lt;script src="https://checkout.magpie.im/v2/checkout.js"
   class="magpie-button"
   data-name="My Cloud Service"
@@ -461,7 +460,7 @@
                         <div id="collapseOnetoggle1-f" class="panel-collapse noScroll collapse in" role="tabpanel" aria-labelledby="headingOne">
                             <div class="panel-body"><p>You can also create a button that requires your customer to enter shipping information. You will need to record the shipping data in your system.</p>
                               <!--Shipping button-->
-                              <form method="POST" action="/simple_process.html">
+                              <form method="POST" action="/simple_process.php">
                                 <script src="https://checkout.magpie.im/v2/checkout.js"
                                   class="magpie-button"
                                   data-name="My Online Store"
@@ -479,7 +478,7 @@
                                 <pre>
                                   <code class="html">
 &lt;!-- PayButton with Shipping Info --&gt;
-&lt;form method="POST" action="/process.html"&gt;
+&lt;form method="POST" action="/process.php"&gt;
 &lt;script src="https://checkout.magpie.im/v2/checkout.js"
   class="magpie-button"
   data-name="My Online Store"
@@ -508,7 +507,7 @@
                               <table>
                                 <tr>
                                   <td>
-                                    <form method="POST" action="/simple_process.html">
+                                    <form method="POST" action="/simple_process.php">
                                       <script src="https://checkout.magpie.im/v2/checkout.js"
                                         class="magpie-button"
                                         data-name="My Music Library"
@@ -523,7 +522,7 @@
                                   </td>
                                   <td style="padding:10px;"></td>
                                   <td>
-                                    <form method="POST" action="/simple_process.html">
+                                    <form method="POST" action="/simple_process.php">
                                       <script src="https://checkout.magpie.im/v2/checkout.js"
                                         class="magpie-button"
                                         data-name="My Music Library"
@@ -538,7 +537,7 @@
                                   </td>
                                   <td style="padding:10px;"></td>
                                   <td>
-                                    <form method="POST" action="/simple_process.html">
+                                    <form method="POST" action="/simple_process.php">
                                       <script src="https://checkout.magpie.im/v2/checkout.js"
                                         class="magpie-button"
                                         data-name="My Music Library"
@@ -557,7 +556,7 @@
                               Replace with appropriate 3-letter currency code.
                               <pre>
                                 <code class="html">
-&lt;form method="POST" action="/process.html"&gt;
+&lt;form method="POST" action="/process.php"&gt;
   &lt;script src="https://checkout.magpie.im/v2/checkout.js"
     class="magpie-button"
     data-name="My Music Library"
@@ -582,7 +581,7 @@
                         </div>
                         <div id="collapseThreetoggle1-f" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingThree">
                             <div class="panel-body">
-                              <form method="POST" action="/simple_process.html">
+                              <form method="POST" action="/simple_process.php">
                                 <script src="https://checkout.magpie.im/v2/checkout.js"
                                   class="magpie-button"
                                   data-name="My Music Library"
@@ -599,7 +598,7 @@
                               Here's the code:
                               <pre>
                                 <code class="html">
-&lt;form method="POST" action="/process.html"&gt;
+&lt;form method="POST" action="/process.php"&gt;
   &lt;script src="https://checkout.magpie.im/v2/checkout.js"
     class="magpie-button"
     data-name="My Music Library"
@@ -629,7 +628,7 @@
                               <tr>
                                 <td>
                                   ON (default)
-                                  <form method="POST" action="/simple_process.html">
+                                  <form method="POST" action="/simple_process.php">
                                     <script src="https://checkout.magpie.im/v2/checkout.js"
                                       class="magpie-button"
                                       data-name="My Music Library"
@@ -645,7 +644,7 @@
                                 <td style="padding:10px;"></td>
                                 <td>
                                   OFF
-                                  <form method="POST" action="/simple_process.html">
+                                  <form method="POST" action="/simple_process.php">
                                     <script src="https://checkout.magpie.im/v2/checkout.js"
                                       class="magpie-button"
                                       data-name="My Music Library"
@@ -665,7 +664,7 @@
                             Following is the code for turning off "remember-me" feature:
                             <pre>
                               <code class="html">
-&lt;form method="POST" action="/process.html"&gt;
+&lt;form method="POST" action="/process.php"&gt;
   &lt;script src="https://checkout.magpie.im/v2/checkout.js"
     class="magpie-button"
     data-name="My Music Library"
@@ -694,7 +693,7 @@
                             <table>
                                 <tr>
                                   <td>
-                                    <form method="POST" action="/simple_process.html">
+                                    <form method="POST" action="/simple_process.php">
                                       <script src="https://checkout.magpie.im/v2/checkout.js"
                                         class="magpie-button"
                                         data-name="My Music Library"
@@ -709,7 +708,7 @@
                                   </td>
                                   <td style="padding:10px;"></td>
                                   <td>
-                                    <form method="POST" action="/simple_process.html">
+                                    <form method="POST" action="/simple_process.php">
                                       <script src="https://checkout.magpie.im/v2/checkout.js"
                                         class="magpie-button"
                                         data-name="My Music Library"
@@ -725,7 +724,7 @@
                                   </td>
                                   <td style="padding:10px;"></td>
                                   <td>
-                                    <form method="POST" action="/simple_process.html">
+                                    <form method="POST" action="/simple_process.php">
                                       <script src="https://checkout.magpie.im/v2/checkout.js"
                                         class="magpie-button"
                                         data-name="My Music Library"
@@ -744,7 +743,7 @@
                               <br>
                               <pre>
                                 <code class="html">
-&lt;form method="POST" action="/process.html"&gt;
+&lt;form method="POST" action="/process.php"&gt;
   &lt;script src="https://checkout.magpie.im/v2/checkout.js"
     class="magpie-button"
     data-name="My Music Library"
@@ -773,7 +772,7 @@
                             <table>
                                 <tr>
                                   <td>
-                                    <form method="POST" action="/simple_process.html">
+                                    <form method="POST" action="/simple_process.php">
                                       <script src="https://checkout.magpie.im/v2/checkout.js"
                                         class="magpie-button"
                                         data-name="My Music Library"
@@ -789,7 +788,7 @@
                                   </td>
                                   <td style="padding:10px;"></td>
                                   <td>
-                                    <form method="POST" action="/simple_process.html">
+                                    <form method="POST" action="/simple_process.php">
                                       <script src="https://checkout.magpie.im/v2/checkout.js"
                                         class="magpie-button"
                                         data-name="Manila Church"
@@ -809,7 +808,7 @@
                               <br>
                               <pre>
                                 <code class="html">
-&lt;form method="POST" action="/process.html"&gt;
+&lt;form method="POST" action="/process.php"&gt;
   &lt;script src="https://checkout.magpie.im/v2/checkout.js"
     class="magpie-button"
     data-name="Manila Church"
@@ -854,7 +853,7 @@
     <p>Copy and paste it on an HTML page</p>
     <pre>
     <code class="html">
-&lt;form method="POST" action="/process.html"&gt;
+&lt;form method="POST" action="/process.php"&gt;
   &lt;script src="https://checkout.magpie.im/v2/checkout.js"
     class="magpie-button"
     data-name="Rock &amp; Roll Concert"
@@ -898,7 +897,7 @@
   <p>Copy and paste it on an HTML page</p>
   <pre>
   <code class="html">
-&lt;form method="POST" action="/process.html"&gt;
+&lt;form method="POST" action="/process.php"&gt;
   &lt;script src="https://checkout.magpie.im/v2/checkout.js"
     class="magpie-button"
     data-name="My Online Store"
